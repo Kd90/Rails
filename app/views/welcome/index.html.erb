@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+		<style type="text/css">
+			
+			body {background-color:#aaaaaa;
+				}
+				
+		/*Centers the navbar*/
+			nav {
+				text-align:center;
+				}
+				
+		/*This hides the submenus, aligns their text center*/
+			nav ul ul {
+				display:none;
+				text-align:center;
+				}
+				
+		/*This displays the submenus in a block-style when the mouse hovers over and the > selector makes sure only the child UL of LI shows up, instead of all menus appearing at once */
+			nav ul li:hover > ul {
+				display:block;
+				}
+			
+		/*Styles the navbar, positions submenus relative to main nav elements, condenses width of menu to fit,"webkit" is necessary for Chrome to display gradient*/ 
+			nav ul {
+				background:#efefef; 
+				background:linear-gradient(top, #efefef 50%, #aaaaaa 100%);  
+				background:-webkit-linear-gradient(top, #efefef 50%,#aaaaaa 100%); 
+				box-shadow:9px 9px 9px rgba(0,0,0,0.55);
+				padding:0px 20px;
+				border-radius:25px;  
+				list-style-type: none;
+				position:relative;
+				display:inline-table;
+				}
+				
+			nav ul li {
+				float:left;
+				}
+				
+			nav ul li:hover {
+				background:#4b545f;
+				background:linear-gradient(top, #4f5964 0%, #5f6975 40%);
+				background:-webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+				}
+				
+			nav ul li:hover a {
+				color:#4dff4d;
+				}
+		
+			nav ul li a {
+				display: block; padding: 25px 40px;
+				color: #757575; text-decoration: none;
+				}
+			
+		
+			nav ul ul {
+				background: #5f6975; 
+				border-radius: 0px; 
+				padding: 0;
+				position: absolute; 
+				top: 100%;
+				}
+				
+		/*styles the submenu borders and floats it so */	
+			nav ul ul li {
+				float: none; 
+				border-top: 2px solid #6b727c;
+				border-bottom: 2px solid #575f6a; 
+				position: relative;
+				}
+				
+		/*pads and colors the submenu items*/	
+			nav ul ul li a {
+				padding: 15px 40px;
+				color: #ffffff;
+				}	
+				
+		/*Colors the submenu backgrounds when hovered*/
+			nav ul ul li a:hover {
+				background: #4b545f;
+				}
+		
+			nav ul ul ul {
+				position: absolute; left: 100%; top:0;
+				}			
+				
+		</style>
+		
+</head>
+	
+<body>
+	
+	<nav>
+		<ul>
+			<li><a href="#Home">Home</a></li>
+			
+			<li><a href="#About">About</a>
+				<ul>
+					<li><a href="#Staff">Staff</a></li>
+					<li><a href="#History">History</a></li>
+					<li><a href="#Press">Press</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="#Media">Media</a>
+				<ul>
+					<li><a href="#Blog">Blog</a></li>
+					<li><a href="#Audio">Audio</a></li>
+					<li><a href="#Video">Video</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="#Contact">Contact</a></li>
+			
+		</ul>
+	</nav>
+</body>
+</html>
+				
